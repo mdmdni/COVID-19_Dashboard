@@ -25,9 +25,9 @@ Link to the Shiny App:
 - install.packages('rsconnect')
 - library('rsconnect')
 4. Login to account:
-rsconnect::setAccountInfo(name='USERNAME',  token='TOKEN',  secret='SECRET')
+- rsconnect::setAccountInfo(name='USERNAME',  token='TOKEN',  secret='SECRET')
 5. Deploy app:
-rsconnect::deployApp('./COVID-19_Dashoboard')
+- rsconnect::deployApp('./COVID-19_Dashoboard')
 
 ## Data Sources
 
