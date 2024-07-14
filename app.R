@@ -34,7 +34,8 @@ filtered_table <- filtered_table %>%
   mutate(
     TotalCases = parse_number(TotalCases),
     TotalDeaths = parse_number(TotalDeaths),
-    TotalRecovered = parse_number(TotalRecovered)
+    TotalRecovered = if_else(TotalRecovered == "N/A", NA_character_, TotalRecovered) %>%
+      parse_number()
   )
 
 # Replace country names to match the CSV file
@@ -152,7 +153,14 @@ ui <- dashboardPage(
                 )
               )
       )
-    )
+    ),
+    # Footer
+    div(
+      class = "footer",
+      p("© Ayadurai, Medini, Roci, and Yogeswaran. ",
+        a(href = "https://github.com/mdmdni/COVID-19_Dashboard.git", "GitHub Repository")
+      ),
+      style = "text-align: center; padding: 10px; background-color: #f8f9fa; border-top: 1px solid #e9ecef;")
   )
 )
 
