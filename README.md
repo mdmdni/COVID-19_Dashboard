@@ -1,8 +1,10 @@
 # COVID-19_Dashboard
+
+Done by: Ayadurai, Medini, Roci and Yogeswaran
  
 This Shiny application provides a comprehensive dashboard for monitoring COVID-19 statistics globally. It features interactive maps, tables, and plots to visualize the spread and impact of the virus across different countries.
 
-Link to the Shiny App: 
+Link to the Shiny App: https://iw3oij-mouad-medini.shinyapps.io/covid-19_dashboard/
 
 ## Table of Contents
 
