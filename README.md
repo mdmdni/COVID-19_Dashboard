@@ -22,8 +22,8 @@ Link to the Shiny App:
 
 1. Create Account
 2. Install rsconnect package:
-   install.packages('rsconnect')
-   library('rsconnect')
+install.packages('rsconnect')
+library('rsconnect')
 4. Login to account:
 rsconnect::setAccountInfo(name='USERNAME',  token='TOKEN',  secret='SECRET')
 5. Deploy app:
